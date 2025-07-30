@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block title %}Topic{% endblock %}
+{% block content %}
+    <div class="container">
+        <h1 class="text-center mt-5">Start a New Brainstorming Session</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form method="GET" autocomplete="off" action="/brainstorm" class="mt-4">
+                    <div class="form-group">
+                        <label for="topic">Enter a question for your brainstorming session:</label> <br>
+                        <textarea placeholder="Write your question here" class="form-control" name="topic" id="topic"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Create Session</button>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

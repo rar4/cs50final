@@ -1,0 +1,11 @@
+{% extends "gate.html" %}
+{% block title %}Topic{% endblock %}
+{% block content %}
+            
+    <div class="error-container">
+        <h1 class="error-code">400</h1>
+        <h2 class="error-message">{{ message }}</h2>
+        <a href="/" class="btn btn-primary">Return to Home</a>
+    </div>
+    
+{% endblock %}

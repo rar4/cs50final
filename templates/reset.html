@@ -1,0 +1,10 @@
+{% extends "gate.html" %}
+{% block title %}Password Reset{% endblock %}
+{% block content %}
+    <form action="/confirm_reset" method="POST">
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <input type="password" name="new_password" placeholder="Enter new password" required>
+        <input type="password" name="confirm_password" placeholder="Confirm new password" required>
+        <button type="submit">Reset Password</button>
+    </form>
+{% endblock %}

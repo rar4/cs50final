@@ -1,0 +1,6 @@
+body {
+    background: linear-gradient(135deg, #6e8efb, #a777e3, #ff6b6b);
+    min-height: 100vh;
+    margin: 0;
+    background-attachment: fixed;
+}

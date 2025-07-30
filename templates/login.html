@@ -1,0 +1,30 @@
+{% extends "gate.html" %}
+{% block title %}Login{% endblock %}
+{% block content %}
+<div class="container text-center mt-5">
+
+  {% with messages = get_flashed_messages(with_categories=False) %}
+  {% if messages %}
+    {% for message in messages %}
+      <div class="bg-primary text-white p-3 rounded">{{ message }}</div>
+    {% endfor %}
+  {% endif %}
+{% endwith %}
+
+
+  <h2>Login</h2>
+  <form id="loginForm" class="mt-3" method="POST">
+    <div class="mb-3">
+      <label for="username" class="form-label">Username</label>
+      <input type="text" name="username" id="username" class="form-control w-50 mx-auto" placeholder="Enter email" required>
+    </div>
+    <div class="mb-3">
+      <label for="password" class="form-label">Password</label>
+      <input type="password" name="password" id="password" class="form-control mx-auto w-50" placeholder="Enter password" required>
+    </div>
+    <button type="submit" class="btn btn-primary btn-primary-large">Login</button> <br> <br>
+    <a href="/reset">Forgot password?</a>
+    <p class="mt-3">Don't have an account? <a class="link-pimary" href="/register">Register here</a></p>
+  </form>
+</div>
+{% endblock %}
