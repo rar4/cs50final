@@ -1,7 +1,8 @@
 *
 !static/
-!templates
+!templates/
 !app.py
+!generation.py
 !fetch_image.py
 !README.md
 !requirements.txt
