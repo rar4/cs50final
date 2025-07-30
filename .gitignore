@@ -1,0 +1,9 @@
+*
+!static/
+!templates
+!app.py
+!fetch_image.py
+!README.md
+!requirements.txt
+!utils.py
+!.gitignore
